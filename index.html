@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Maharat Plus - E-Learning Platform for professional and personal development." />
+  <meta name="keywords" content="soft skills, e-learning, Maharat Plus, online courses, professional development, personal development, Egypt, EBI" />
+  <title>Maharat Plus - E‑Learning Platform</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+        <img src="images/Logo EN.png" alt="Maharat Plus Logo">
+      </a>
+      </div>
+
+      <!-- Navigation -->
+      <nav role="navigation" aria-label="Main">
+      <ul class="nav-links" id="primaryNav">
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="index.html#courses">Courses</a></li>
+        <li><a href="index.html#contact">Contact Us</a></li>
+      </ul>
+
+      <!-- Login/Register -->
+      <button id="openLogin" class="btn-login">Login / Register</button>
+
+      <!-- Mobile Menu Toggle -->
+      <!-- كان div... خليه button مع aria-controls/expanded -->
+      <button class="menu-toggle" id="menuToggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+  <section id="hero" class="hero">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-slider">
+    <div class="hero-slide active">
+      <img class="hero-image" src="images/hero1.svg" alt="Hero Image 1">
+      <div class="hero-content">
+        <h2>Welcome to Maharat Plus</h2>
+        <p>Your gateway to professional and personal development.</p>
+        <a href="#courses" class="btn-course">Explore Courses</a>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <img class="hero-image" src="images/hero2.svg" alt="Hero Image 2">
+      <div class="hero-content">
+        <h2>Expand Your Skills</h2>
+        <p>Join our courses to boost your career and grow your knowledge.</p>
+        <a href="#courses" class="btn-course">Discover More</a>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <img class="hero-image" src="images/hero3.svg" alt="Hero Image 3">
+      <div class="hero-content">
+        <h2>Learn Anytime, Anywhere</h2>
+        <p>Access our learning materials from any device at any time.</p>
+        <a href="#courses" class="btn-course">Start Learning</a>
+      </div>
+    </div>
+  </div>
+
+  <button class="hero-arrow left" id="prevSlide"><i class="fas fa-chevron-left"></i></button>
+  <button class="hero-arrow right" id="nextSlide"><i class="fas fa-chevron-right"></i></button>
+</section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section fade-in">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="images/image (3).svg" alt="Maharat Plus Library">
+        </div>
+        <div class="about-text">
+          <h2>Maharat Plus eLearning Library</h2>
+          <p>With a mandate to develop the human capital in the banking sector, the Egyptian Banking Institute (EBI), the official training arm of the Central Bank of Egypt, excels in providing state-of-the-art training solutions in line with the latest industry international best practices in areas of banking, management, leadership, information technology and small and medium enterprises (SMEs).
+</p>
+          <p>Maharat Plus E-Learning Platform provides you with a variety of over 100 off-the-shelf courses, allowing you to study at your own convenience. We envision a world where adult learners can enrich their knowledge by accessing the best learning experience.
+
+</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses">
+      <h2>Our Courses</h2>
+      <div class="course-list">
+        <article class="course">
+          <img src="images/Foundational.svg" alt="Foundational Soft Skills">
+          <h3>مهارات التطوير الأساسية</h3>
+          <p>Enhance your communication, teamwork, and problem-solving skills.</p>
+          <a href="foundational.html" class="btn-course">Explore</a>
+        </article>
+        <article class="course">
+          <img src="images/Leadership.svg" alt="Leadership & Management">
+          <h3>مهارة القيادة والإدارة</h3>
+          <p>Develop strategies to lead and inspire effective teams.</p>
+          <a href="leadership.html" class="btn-course">Explore</a>
+        </article>
+        <article class="course">
+          <img src="images/Professional Development.svg" alt="Professional Development">
+          <h3>التطوير المهني</h3>
+          <p>Advance your career with essential workplace competencies.</p>
+          <a href="professional.html" class="btn-course">Explore</a>
+        </article>
+        <article class="course">
+          <img src="images/Personal Development.svg" alt="Personal Development">
+          <h3>التطوير الشخصي</h3>
+          <p>Build self-awareness, resilience, and lifelong learning habits.</p>
+          <a href="personal.html" class="btn-course">Explore</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div><h2>Contact Us</h2></div>
+      
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required pattern="[A-Za-z\s]+" title="Please enter letters only">
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required pattern="[0-9]+" title="Please enter numbers only">
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+        
+        <button type="submit">Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+  <div class="footer-container">
+    <!-- Hotline -->
+    <div class="footer-hotline">
+      <img src="images/hotline.png" alt="Hotline" class="footer-img">
+    </div>
+
+    <!-- Copyright -->
+    <p class="footer-copy">© 2025 Maharat Plus. All rights reserved.</p>
+
+    <!-- Social Links -->
+    <div class="footer-social">
+      <a href="https://www.facebook.com/EgyptianBankingInstitute" target="_blank" aria-label="Facebook">
+        <img src="images/facebook-victor.svg" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/egyptianbankinginstitute/?hl=en" target="_blank" aria-label="Instagram">
+        <img src="images/Instagram-victor.svg" alt="Instagram">
+      </a>
+      <a href="linkedin.com/company/egyptian-banking-institute" target="_blank" aria-label="LinkedIn">
+        <img src="images/linkedin-victor.svg" alt="LinkedIn">
+      </a>
+      <a href="https://www.youtube.com/channel/UC6gDIpr3o7vX6yueLKWfiwQ" target="_blank" aria-label="YouTube">
+        <img src="images/youtube-victor.svg" alt="YouTube">
+      </a>
+    </div>
+  </div>
+</footer>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" data-close="loginModal">&times;</span>
+      <h2>Login</h2>
+      <form class="login-form" id="loginForm">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="loginpassword">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <button type="submit" class="btn-primary">Login</button>
+        
+        <div class="signup-text">
+          Don't have an account?
+          <button type="button" class="btn-signup-link" id="openSignupFromLogin">
+            Sign Up
+          </button>
+        </div>
+
+        <div class="social-login">
+          <p>Or login with</p>
+          <button type="button" class="btn-google">
+            <img src="images/icon-google.svg" alt="Google"> Google
+          </button>
+          <button type="button" class="btn-apple">
+            <img src="images/apple-icon.svg" alt="Apple"> Apple
+          </button>
+          <button type="button" class="btn-facebook">
+            <img src="images/facebook-icon.svg" alt="Facebook"> Facebook
+          </button>
+          <button type="button" class="btn-linkedin">
+            <img src="images/linkedin-icon.svg" alt="LinkedIn"> LinkedIn
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Signup Modal -->
+  <div id="signupModal" class="modal">
+  <div class="modal-content">
+    <span class="close" data-close="signupModal">&times;</span>
+    <h2>Sign Up</h2>
+    <form class="login-form" id="signupForm">
+      <label for="signupName">Full Name</label>
+      <input type="text" id="signupName" name="name" placeholder="Enter your full name" required>
+
+      <label for="signupEmail">Email</label>
+      <input type="email" id="signupEmail" name="email" placeholder="Enter your email" required>
+
+      <label for="signupPassword">Password</label>
+      <input type="password" id="signupPassword" name="password" placeholder="Create a password" required>
+
+      <button type="submit" class="btn-primary">Sign Up</button>
+
+      <div class="signup-text">
+        Already have an account?
+        <button type="button" class="btn-signup-link" id="openLoginFromSignup">
+          Login
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
+

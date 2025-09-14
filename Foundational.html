@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Maharat Plus - E-Learning Platform for professional and personal development." />
+  <meta name="keywords" content="soft skills, e-learning, Maharat Plus, online courses, professional development, personal development, Egypt, EBI" />
+  <title>Maharat Plus - E‑Learning Platform</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+        <img src="images/Logo EN.png" alt="Maharat Plus Logo">
+      </a>
+      </div>
+
+      <!-- Navigation -->
+      <nav role="navigation" aria-label="Main">
+      <ul class="nav-links" id="primaryNav">
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="index.html#courses">Courses</a></li>
+        <li><a href="index.html#contact">Contact Us</a></li>
+      </ul>
+
+      <!-- Login/Register -->
+      <button id="openLogin" class="btn-login">Login / Register</button>
+
+      <!-- Mobile Menu Toggle -->
+      <!-- كان div... خليه button مع aria-controls/expanded -->
+      <button class="menu-toggle" id="menuToggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    </div>
+  </header>
+
+
+  <!-- Section Title -->
+  <section class="section-title">
+    <div class="container">
+      <h2>مهارات التطوير الأساسية</h2>
+      <p>Explore the basic courses designed to build your strong foundation.</p>
+    </div>
+  </section>
+
+<!-- Courses Section -->
+  <section class="courses-grid">
+    <div class="container">
+  <!-- Course Item -->
+      <div class="course-item">
+        <div class="course-image">
+        <img src="images/develop your skills as a trainer.svg" alt="إتقان فن التقديم رفع مستوى مهاراتك كمدرب">
+        </div>
+         <div class="course-content">
+            <div class="course-text">
+        <h3>إتقان فن التقديم رفع مستوى مهاراتك كمدرب</h3>
+        <p>التقديم هو مهارة مهمة تستخدم في العديد من السياقات، سواء كان ذلك في العمل، أو في العروض العامة، أو في التواصل الاجتماعي.</p>
+        </div>
+        <a href="https://lms.ebi.gov.eg/course/view.php?id=10793" class="btn">View Details</a>
+        </div>
+      </div>
+
+      <div class="course-item">
+        <div class="course-image">
+        <img src="images/How to be emotionally intelligent.svg" alt="كيف تكون ذكي عاطفيًّا">
+        </div>
+         <div class="course-content">
+            <div class="course-text">
+        <h3>كيف تكون ذكي عاطفيًّا</h3>
+        <p>الذكاء العاطفي هو القدرة على فهم وإدراك المشاعر الخاصة بنفسك وبالآخرين، وكيفية التعامل معها بشكل فعال. يشمل الذكاء العاطفي القدرة على التحكم في المشاعر والتعبير عنها بشكل صحيح، وأيضًا القدرة على تحليل وفهم مشاعر الآخرين وكيفية التفاعل معهم.</p>
+            </div>
+        <a href="https://lms.ebi.gov.eg/course/view.php?id=10792" class="btn">View Details</a>
+        </div>
+      </div>
+
+      <div class="course-item">
+        <div class="course-image">
+        <img src="images/The Art of Dealing with Others.svg" alt="فن التعامل مع الآخرين للنجاح في مكان العمل">
+        </div>
+         <div class="course-content">
+            <div class="course-text">
+        <h3>فن التعامل مع الآخرين للنجاح في مكان العمل</h3>
+        <p>مهارات التعامل مع الاخرين هي عامل أساسي للنجاح في حياتنا، سواء كانت شخصية أو مهنية. علشان لما بيكون عندنا مهارات قوية في التعامل، بنقدر اننا نبني علاقات صحية ونتفاعل بشكل إيجابي.  علشان كده مهارات التعامل مع الاخرين في مكان العمل مهمة لأنها هى الى بتخلينا نعرف نتواصل و نتعاون و نبنى بيئة عمل إيجابية و ده فى الاخر بيكون نتيجته نجاح المنظمة و نجاحنا الشخصي.</p>
+        </div>
+        <a href="https://lms.ebi.gov.eg/mod/scorm/view.php?id=45762" class="btn">View Details</a>
+        </div>
+      </div>
+      
+      <div class="course-item">
+        <div class="course-image">
+        <img src="images/Mastering personal communication.svg" alt="إتقان التواصل الشخصي">
+        </div>
+         <div class="course-content">
+            <div class="course-text">
+        <h3>إتقان التواصل الشخصي</h3>
+        <p>إن للسلوك تعاريف عديده وكثيرة في كتب علم النفس و للتبسيط و تلخيص ما ذكرته الكتب فالسلوك هو أي نشاط أو فعل ظاهر أو مخفي يصدر من الإنسان نتيجة علاقته وتفاعله بالبيئة المحيطة به بشكل متواصل و متغير في نفس الوقت تبعا لنمو الفرد في جميع جوانبه   </p>
+            </div>
+        <a href="https://lms.ebi.gov.eg/course/view.php?id=10792" class="btn">View Details</a>
+        </div>
+      </div>
+
+      
+      <div class="course-item">
+        <div class="course-image">
+        <img src="images/Advanced Communication for Managers.svg" alt="فن التواصل المتطور للمديرين">
+        </div>
+         <div class="course-content">
+            <div class="course-text">
+        <h3>فن التواصل المتطور للمديرين</h3>
+        <p>الذكاء العاطفي هو القدرة على فهم وإدراك المشاعر الخاصة بنفسك وبالآخرين، وكيفية التعامل معها بشكل فعال. يشمل الذكاء العاطفي القدرة على التحكم في المشاعر والتعبير عنها بشكل صحيح، وأيضًا القدرة على تحليل وفهم مشاعر الآخرين وكيفية التفاعل معهم.</p>
+         </div>
+        <a href="https://lms.ebi.gov.eg/course/view.php?id=10792" class="btn">View Details</a>
+        </div>
+      </div>
+
+      <div class="course-item">
+        <div class="course-image">
+        <img src="images/How to express yourself.svg" alt="كيف تعبر عن نفسك بفاعلية لتبني شبكة علاقات مميزة">
+        </div>
+         <div class="course-content">
+            <div class="course-text">
+        <h3>كيف تعبر عن نفسك بفاعلية لتبني شبكة علاقات مميزة</h3>
+        <p>مهارات التعامل مع الاخرين هي عامل أساسي للنجاح في حياتنا، سواء كانت شخصية أو مهنية. علشان لما بيكون عندنا مهارات قوية في التعامل، بنقدر اننا نبني علاقات صحية ونتفاعل بشكل إيجابي.  علشان كده مهارات التعامل مع الاخرين في مكان العمل مهمة لأنها هى الى بتخلينا نعرف نتواصل و نتعاون و نبنى بيئة عمل إيجابية و ده فى الاخر بيكون نتيجته نجاح المنظمة و نجاحنا الشخصي.</p>
+            </div>
+        <a href="https://lms.ebi.gov.eg/mod/scorm/view.php?id=45762" class="btn">View Details</a>
+         </div>
+    </div>
+
+    <div class="course-item">
+        <div class="course-image">
+        <img src="images/Etiquette for dealing with people with disabilities.svg" alt="إتيكيت التعامل مع الأشخاص ذوى الهمم">
+        </div>
+         <div class="course-content"> 
+            <div class="course-text">
+        <h3>إتيكيت التعامل مع الأشخاص ذوى الهمم</h3>
+        <p>مهارات التعامل مع الاخرين هي عامل أساسي للنجاح في حياتنا، سواء كانت شخصية أو مهنية. علشان لما بيكون عندنا مهارات قوية في التعامل، بنقدر اننا نبني علاقات صحية ونتفاعل بشكل إيجابي.  علشان كده مهارات التعامل مع الاخرين في مكان العمل مهمة لأنها هى الى بتخلينا نعرف نتواصل و نتعاون و نبنى بيئة عمل إيجابية و ده فى الاخر بيكون نتيجته نجاح المنظمة و نجاحنا الشخصي.</p>
+            </div>
+        <a href="https://lms.ebi.gov.eg/mod/scorm/view.php?id=45762" class="btn">View Details</a>
+         </div>
+    </div>
+
+    <div class="course-item">
+        <div class="course-image">
+        <img src="images/Effective communication skills.svg" alt="مهارات التواصل الفعال">
+        </div>
+         <div class="course-content">
+            <div class="course-text">
+        <h3>مهارات التواصل الفعال</h3>
+        <p>مهارات التعامل مع الاخرين هي عامل أساسي للنجاح في حياتنا، سواء كانت شخصية أو مهنية. علشان لما بيكون عندنا مهارات قوية في التعامل، بنقدر اننا نبني علاقات صحية ونتفاعل بشكل إيجابي.  علشان كده مهارات التعامل مع الاخرين في مكان العمل مهمة لأنها هى الى بتخلينا نعرف نتواصل و نتعاون و نبنى بيئة عمل إيجابية و ده فى الاخر بيكون نتيجته نجاح المنظمة و نجاحنا الشخصي.</p>
+        </div>
+        <a href="https://lms.ebi.gov.eg/mod/scorm/view.php?id=45762" class="btn">View Details</a>
+         </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+  <div class="footer-container">
+    <!-- Hotline -->
+    <div class="footer-hotline">
+      <img src="images/hotline.png" alt="Hotline" class="footer-img">
+    </div>
+
+    <!-- Copyright -->
+    <p class="footer-copy">© 2025 Maharat Plus. All rights reserved.</p>
+
+    <!-- Social Links -->
+    <div class="footer-social">
+      <a href="https://www.facebook.com/EgyptianBankingInstitute" target="_blank" aria-label="Facebook">
+        <img src="images/facebook-victor.svg" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/egyptianbankinginstitute/?hl=en" target="_blank" aria-label="Instagram">
+        <img src="images/Instagram-victor.svg" alt="Instagram">
+      </a>
+      <a href="linkedin.com/company/egyptian-banking-institute" target="_blank" aria-label="LinkedIn">
+        <img src="images/linkedin-victor.svg" alt="LinkedIn">
+      </a>
+      <a href="https://www.youtube.com/channel/UC6gDIpr3o7vX6yueLKWfiwQ" target="_blank" aria-label="YouTube">
+        <img src="images/youtube-victor.svg" alt="YouTube">
+      </a>
+    </div>
+  </div>
+</footer>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" data-close="loginModal">&times;</span>
+      <h2>Login</h2>
+      <form class="login-form" id="loginForm">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" placeholder="Enter your email" required>
+
+        <label for="loginpassword">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <button type="submit" class="btn-primary">Login</button>
+        
+        <div class="signup-text">
+          Don't have an account?
+          <button type="button" class="btn-signup-link" id="openSignupFromLogin">
+            Sign Up
+          </button>
+        </div>
+
+        <div class="social-login">
+          <p>Or login with</p>
+          <button type="button" class="btn-google">
+            <img src="images/icon-google.svg" alt="Google"> Google
+          </button>
+          <button type="button" class="btn-apple">
+            <img src="images/apple-icon.svg" alt="Apple"> Apple
+          </button>
+          <button type="button" class="btn-facebook">
+            <img src="images/facebook-icon.svg" alt="Facebook"> Facebook
+          </button>
+          <button type="button" class="btn-linkedin">
+            <img src="images/linkedin-icon.svg" alt="LinkedIn"> LinkedIn
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Signup Modal -->
+  <div id="signupModal" class="modal">
+  <div class="modal-content">
+    <span class="close" data-close="signupModal">&times;</span>
+    <h2>Sign Up</h2>
+    <form class="login-form" id="signupForm">
+      <label for="signupName">Full Name</label>
+      <input type="text" id="signupName" name="name" placeholder="Enter your full name" required>
+
+      <label for="signupEmail">Email</label>
+      <input type="email" id="signupEmail" name="email" placeholder="Enter your email" required>
+
+      <label for="signupPassword">Password</label>
+      <input type="password" id="signupPassword" name="password" placeholder="Create a password" required>
+
+      <button type="submit" class="btn-primary">Sign Up</button>
+
+      <div class="signup-text">
+        Already have an account?
+        <button type="button" class="btn-signup-link" id="openLoginFromSignup">
+          Login
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
+
+
